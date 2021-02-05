@@ -1,1 +1,1 @@
-Hello
+Basic bookmarking Chrome extenstion for [WIKID](https://github.com/jamescarlyle/wikid.git). Because WIKID IPFS context CIDs change on every update, the URL for the most recent version of the Wiki also changes. The bookmark extension listens for these changes and automatically updates the bookmark to point to the head (latest version).
