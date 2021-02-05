@@ -1,0 +1,13 @@
+{
+    "name": "WIKID bookmark saver",
+    "description": "This extension watches for WIKID context changes, and updates an associated bookmark.",
+    "version": "0.1",
+    "manifest_version": 2,
+    "content_scripts" :     [ {
+        "matches": ["http://localhost:5000/*"],
+        "include_globs": ["*#context/*"],
+        "js": ["contentScript.js"]
+      } ],
+    "background": {"scripts": ["setBookmark.js"]},
+    "permissions": ["bookmarks", "tabs"]
+}
